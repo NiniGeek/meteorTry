@@ -1,6 +1,12 @@
 <div class="container">
     <header>
-        <h1>Todo List Angular</h1>
+        <h1>Todo List Angular ( {{ incompleteCount() }} )</h1>
+
+        <label class="hide-completed" for="">
+            <input ng-model="$parent.hideCompleted" type="checkbox"/>
+            Hide Completed Tasks
+        </label>
+
         <!-- add a form below the h1 -->
         <form class="new-task" ng-submit="addTask(newTask); newTask=''" action="get">
             <input ng-model="newTask" type="text" name="text" placeholder="Type to add new tasks"/>
