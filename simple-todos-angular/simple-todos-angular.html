@@ -1,14 +1,9 @@
 <head>
-  <title>simple-todos-angular</title>
+  <title>Todo List With Angular</title>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+<body ng-app="simple-todos"
+      ng-include="'todos-list.ng.html'"
+      ng-controller="TodosListCtrl">
 
-  {{> hello}}
 </body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
