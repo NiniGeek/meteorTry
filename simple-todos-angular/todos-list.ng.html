@@ -7,6 +7,10 @@
         </form>
     </header>
     <ul ng-repeat="task in tasks">
-        <li>{{task.text}}</li>
+        <li ng-class="{'checked': task.checked}">
+            <button class="delete" ng-click="tasks.remove(task)">&times;</button>
+            <input ng-model="task.checked" class="toggle-checked" type="checkbox"/>
+            <span class="text">{{task.text}}</span>
+        </li>
     </ul>
 </div>
