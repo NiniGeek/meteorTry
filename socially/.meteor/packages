@@ -8,3 +8,5 @@ meteor-platform
 autopublish
 urigo:angular
 angularui:angular-ui-router
+accounts-password
+accounts-ui
